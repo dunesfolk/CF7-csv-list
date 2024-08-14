@@ -53,7 +53,7 @@ finally:
         connection.close()
         print("MySQL connected and closed successfully")
 
-with open('result.csv', 'w') as f:
+with open('result.csv', 'w', encoding="utf_8_sig") as f:
     write = csv.writer(f)
     write.writerows(result)
 
